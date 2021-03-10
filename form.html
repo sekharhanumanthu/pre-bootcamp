@@ -4,43 +4,47 @@
         <title>
             My Registration Form
         </title>
+        <link rel="stylesheet" type = "text/css" href="css/my_form.css"
     </head>
     <body>
-        <h1>My Registration Form</h1>
+        <h1 class="headerclass">My Registration Form</h1>
         <form action="invokeAction.php" method="post">
-            <label for = "first_name">First Name</label>
-            <input type="text" id="id_first_name" name="first_name">
+            <label class="formclass" for = "first_name">First Name</label>
+            <input type="text" id="first_name" name="first_name">
             <br><br>
-            <label for = "last_name">Last Name</label>
-            <input type="text" id="id_last_name" name="last_name">
+            <label class="formclass" for = "last_name">Last Name</label>
+            <input type="text" id="last_name" name="last_name">
             <br><br>
-            <label for = "email">Email</label>
-            <input type="text" id="id_email" name="email">
+            <label class="formclass" for = "email">Email</label>
+            <input type="text" id="email" name="email">
             <br><br>
-            <label for = "password">Password</label>
-            <input type="password" id="id_password" name="password">
+            <label class="formclass" for = "password">Password</label>
+            <input type="password" id="password" name="password">
             <br><br>
-            <label for = "confirmpassword">PW Confirm</label>
-            <input type="confirmpassword" id="id_confirmpassword" name="confirmpassword">
+            <label class="formclass" for = "confirmpassword">PW Confirm</label>
+            <input type="password" id="confirmpassword" name="confirmpassword">
             <br><br>
-            <label for = "birthday">Birthday</label>
-            <input type="date" id = "id_birthday" name = "birthday">
+            <label class="formclass" for = "birthday">Birthday</label>
+            <input type="date" id = "birthday" name = "birthday">
             <br><br>
-            <label for = "male">Male</label>
-            <input type = "radio" id = "id_male" name = "gender" value = "male">
-            <label for = "female">Female</label>
-            <input type = "radio" id = "id_female" name = "gender" value = "female">
-            <label for = "Other">Other</label>
-            <input type = "radio" id = "id_other" name = "other" value = "other">
+            <input type = "radio" id = "male" name = "gender" value = "male">
+            <label class="radioclass" for = "male">Male</label>     
+        
+            <input type = "radio" id = "female" name = "gender" value = "female">
+            <label class="radioclass" for = "female" name = "gender">Female</label>
+ 
+            <input type = "radio" id = "Other" name = "gender" value = "other">
+            <label class="radioclass" for = "Other" name = "gender">Other</label>
+
             <br><br>
-            <label for = "short description">A short description of yourself</label>
-            <textarea id = "id_description" name = "description"></textarea>
+            <label class="formclass" for = "shortDescription">A short description of yourself</label>
+            <textarea id = "shortDescription" name = "description"></textarea>
             <br><br>
-            <label for = "favoriteLanguage"> Favorite Language </label>
-            <select name = "selectOptions">
-                <option name = "javascript">JavaScript</option>
-                <option name = "java">Java</option>
-                <option name = "python">Python</option>
+            <label class="formclass" for = "options"> Favorite Language </label>
+            <select name = "selectOptions" id ='options'>
+                <option id = "javascript">JavaScript</option>
+                <option id = "java">Java</option>
+                <option id = "python">Python</option>
             </select>
             <br><br>
             <input type="submit" value="Submit">
